@@ -1,0 +1,4644 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://ktmfk.de/ontology/tribAIn"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://ktmfk.de/ontology/tribAIn"
+     versionIRI="http://ktmfk.de/ontology/tribAIn">
+    <Prefix name="" IRI="http://ktmfk.de/ontology/tribAIn"/>
+    <Prefix name="mat" IRI="http://ktmfk.de/ontology/tribAIn/materialMetadata/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="tAI" IRI="http://ktmfk.de/ontology/tribAIn/"/>
+    <Prefix name="uom" IRI="http://ktmfk.de/ontology/tribAIn/unitOfMeasurementMetadata/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Ontology engineer: Patricia Kügler
+Domain expert: Max Marian</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal>This work is licensed under a Creative Commons Attribution 4.0 International License. http://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>tribAIn - Derived from the ancient Greek word “tribein” (= rubbing) and the acronym “AI” (= Artificial Intelligence)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>[Link to Journal will appear here]</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Action-relatedRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ActorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Additive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AggregateTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AmbientMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Amount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AntifoamingAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Antioxidant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AntiwearAdditive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Bar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BearingSteel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BenchTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BindingEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BioLubricant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Bumping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Carbide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Celsius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Characterization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ChemicalComposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CoefficientOfFriction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ComponentTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Compound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ComputationalExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Concentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ConcentrationUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Contact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ContactPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ContentBearingObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ContentBearingPhysical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CorrectionFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CorrosionInhibitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CounterBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cylinder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DMSValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Detergent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Diameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DimensionlessQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DistanceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DomainModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DomainOfExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ElectricPotentialDifference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ElectricPotentialUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Electronvolt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EnergyUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalConclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalDesignStrategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalEquipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExperimentalResults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExtremepressureAdditive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FactorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FieldOfStudy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FieldTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ForceUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionIncrease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionModifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionRadius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionReduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FrictionalBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GeometryElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Gigapascal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Gram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Grease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Grinding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GroupExperimentalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HeatTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HertzianContactStress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/HypothesisRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/IndustrialProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Interaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/InterfacialMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Kelvin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/KiloVolt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Kilogram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/KinematicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Length"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LogicalHypothesisRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LogicalModelRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Lubricant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MXene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MassUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaterialPairing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaterialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MathematicalHypothesisRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MathematicalModelRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MeasurementError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MeasurementSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Megabar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Megapascal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Metre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MetrePerSecond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Micrometre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MicroscopyImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Milimetre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MineralOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Minute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ModelRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ModelTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Newton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Newtonmeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NormalForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ObjectOfExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OperationalParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pascal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PenningValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Percentage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Physical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PhysicalExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PhysicalQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PiraniValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PoissonsRatio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Polishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PourpointDepressant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Predicate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PressureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Process-relatedRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ProductRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Proposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RandomError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ReducedYoungsModulus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ReferenceGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ReferenceSample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RelatedDomain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Relation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RelativeHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RepresentationExperimentalResults"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ResultingPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ResultsDiagramm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rolling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RotationSpeed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rpk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rsk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Runtime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rvk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Rz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SIUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SIbaseUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SIderivedUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SampleGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SampleTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ScientificExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Second"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sliding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SlidingCycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SlidingDistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SolidLubricant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Speed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SpeedUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sphere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Spinning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Steel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SteelHeatTreatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SteelSteel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/StressCollective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/StructuralMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SubjectOfExperiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SubjectRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Substrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SurfaceRoughness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SyntheticOil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SystematicError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TargetVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TaskRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TechnicalDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TemperatureUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TestSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ti3C2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TimeUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TitaniumCarbide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TorqueUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TriboElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TriboSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TribologicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TribologicalReferenceMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/TribologicalTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ultrasonication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Velocity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ViscosityindexImprover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Volt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Voltage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VolumeElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WearBehavior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WearIncrease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WearReduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WearVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Width"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/YoungsModulus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/100Cr6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/2dCompound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/assessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/carriesOut"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/coatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/comparedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAmbientMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCounterBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasInterfacialMedium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasKinematicalParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasOperationalParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasReferenceGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasReferenceSample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSampleGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasStrategy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasStressCollective"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTargetVariable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasTriboSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isAmbientMediumOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isBodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isContactOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isContentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCounterBodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isHypothesisOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isInputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isInterfacialMediumOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isKinematicalParameterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isMaterialOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isOperationalParameterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isOutputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isParameterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isReferenceGroupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isReferenceSampleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isRepresentationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isSampleGroupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isSampleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isStrategyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isStressCollectiveOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isTargetVariableOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isTriboSystemOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isUnitOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/processedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/resultsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/usedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/MeasurementPoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/MetricEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/TimeStamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/maxValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/minValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Bar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Celsius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Electronvolt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Gigapascal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Gram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Hour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Kelvin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/KiloVolt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Kilogram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Megabar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Megapascal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Metre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/MetrePerSecond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Micrometre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Milimetre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Minute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Newton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Pascal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Percentage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SP1000"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/FROM"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/SampleBodyID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/SampleCounterBodyID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/textualDescription"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/textualHypothesis"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/textualInterpretation"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/materialMetadata/composition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/materialMetadata/materialNumber"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/materialMetadata/norm"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/materialMetadata/symbol"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/uomMetadata"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Action-relatedRole"/>
+        <Class IRI="/Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ActorRole"/>
+        <Class IRI="/Action-relatedRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Additive"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AggregateTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AmbientMedium"/>
+        <Class IRI="/TriboElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Amount"/>
+        <Class IRI="/DimensionlessQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AntifoamingAgent"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Antioxidant"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AntiwearAdditive"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Assembly"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Bar"/>
+        <Class IRI="/PressureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BearingSteel"/>
+        <Class IRI="/Steel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BenchTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BindingEnergy"/>
+        <Class IRI="/Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BioLubricant"/>
+        <Class IRI="/Lubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Body"/>
+        <Class IRI="/TriboElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Body"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasMaterial"/>
+            <Class IRI="/Material"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Bumping"/>
+        <Class IRI="/KinematicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Carbide"/>
+        <Class IRI="/Compound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+        <Class IRI="/ExperimentalDesignStrategy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Celsius"/>
+        <Class IRI="/TemperatureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Characterization"/>
+        <Class IRI="/PhysicalExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ChemicalComposition"/>
+        <Class IRI="/ExperimentalConclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CoefficientOfFriction"/>
+        <Class IRI="/DimensionlessQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CoefficientOfFriction"/>
+        <Class IRI="/TribologicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CoefficientOfFriction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/resultsIn"/>
+            <Class IRI="/FrictionalBehavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ComponentTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Compound"/>
+        <Class IRI="/Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ComputationalExperiment"/>
+        <Class IRI="/ScientificExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Concentration"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Concentration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/ConcentrationUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ConcentrationUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Contact"/>
+        <Class IRI="/Interaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ContactPressure"/>
+        <Class IRI="/Pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ContentBearingObject"/>
+        <Class IRI="/ContentBearingPhysical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ContentBearingPhysical"/>
+        <Class IRI="/Physical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CorrectionFactor"/>
+        <Class IRI="/Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CorrosionInhibitor"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CounterBody"/>
+        <Class IRI="/TriboElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CounterBody"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasMaterial"/>
+            <Class IRI="/Material"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cylinder"/>
+        <Class IRI="/VolumeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DMSValue"/>
+        <Class IRI="/Pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Detergent"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Device"/>
+        <Class IRI="/ExperimentalEquipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/carriesOut"/>
+            <Class IRI="/Procedure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Diameter"/>
+        <Class IRI="/Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DimensionlessQuantity"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Distance"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Distance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/DistanceUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DistanceUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DomainModel"/>
+        <Class IRI="/Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DomainOfExperiment"/>
+        <Class IRI="/FieldOfStudy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ElectricPotentialDifference"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ElectricPotentialDifference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/ElectricPotentialUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ElectricPotentialUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Electronvolt"/>
+        <Class IRI="/EnergyUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Energy"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Energy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/EnergyUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnergyUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Error"/>
+        <Class IRI="/Process-relatedRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalConclusion"/>
+        <Class IRI="/ExperimentalResults"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalConclusion"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasTargetVariable"/>
+            <Class IRI="/TargetVariable"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalDesignStrategy"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalEquipment"/>
+        <Class IRI="/Process-relatedRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalFactor"/>
+        <Class IRI="/Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalHypothesis"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalModel"/>
+        <Class IRI="/Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalResults"/>
+        <Class IRI="/ProductRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExperimentalResults"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasTargetVariable"/>
+            <Class IRI="/TargetVariable"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExtremepressureAdditive"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FactorRole"/>
+        <Class IRI="/Process-relatedRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FieldOfStudy"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FieldTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Force"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Force"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/ForceUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ForceUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionForce"/>
+        <Class IRI="/Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionIncrease"/>
+        <Class IRI="/FrictionalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionModifier"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionRadius"/>
+        <Class IRI="/Distance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionRadius"/>
+        <Class IRI="/TribologicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionRadius"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/DistanceUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionReduction"/>
+        <Class IRI="/FrictionalBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FrictionalBehavior"/>
+        <Class IRI="/ResultingPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Geometry"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Geometry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/DistanceUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GeometryElement"/>
+        <Class IRI="/DomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Gigapascal"/>
+        <Class IRI="/PressureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Goal"/>
+        <Class IRI="/TaskRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Gram"/>
+        <Class IRI="/MassUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Grease"/>
+        <Class IRI="/Lubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Grinding"/>
+        <Class IRI="/IndustrialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GroupExperimentalObject"/>
+        <Class IRI="/ObjectOfExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GroupExperimentalObject"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasTargetVariable"/>
+            <Class IRI="/TargetVariable"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HeatTreatment"/>
+        <Class IRI="/IndustrialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Height"/>
+        <Class IRI="/Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HertzianContactStress"/>
+        <Class IRI="/Stress"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hour"/>
+        <Class IRI="/TimeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Humidity"/>
+        <Class IRI="/Concentration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/HypothesisRepresentation"/>
+        <Class IRI="/Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/IndustrialProcess"/>
+        <Class IRI="/Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/IndustrialProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isCarriedOutBy"/>
+            <Class IRI="/Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Input"/>
+        <Class IRI="/FactorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Interaction"/>
+        <Class IRI="/DomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/InterfacialMedium"/>
+        <Class IRI="/TriboElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Kelvin"/>
+        <Class IRI="/SIbaseUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Kelvin"/>
+        <Class IRI="/TemperatureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/KiloVolt"/>
+        <Class IRI="/ElectricPotentialUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Kilogram"/>
+        <Class IRI="/MassUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Kilogram"/>
+        <Class IRI="/SIbaseUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/KinematicalParameter"/>
+        <Class IRI="/ExperimentalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Length"/>
+        <Class IRI="/Distance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Length"/>
+        <Class IRI="/Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LogicalHypothesisRepresentation"/>
+        <Class IRI="/HypothesisRepresentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LogicalModelRepresentation"/>
+        <Class IRI="/ModelRepresentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Lubricant"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MXene"/>
+        <Class IRI="/2dCompound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MassUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Material"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaterialPairing"/>
+        <Class IRI="/Contact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaterialProperty"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MathematicalHypothesisRepresentation"/>
+        <Class IRI="/HypothesisRepresentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MathematicalModelRepresentation"/>
+        <Class IRI="/ModelRepresentation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MeasurementError"/>
+        <Class IRI="/Error"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MeasurementSeries"/>
+        <Class IRI="/Output"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MeasurementSeries"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasParameter"/>
+            <Class IRI="/Parameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Megabar"/>
+        <Class IRI="/PressureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Megapascal"/>
+        <Class IRI="/PressureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Metre"/>
+        <Class IRI="/DistanceUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Metre"/>
+        <Class IRI="/SIbaseUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MetrePerSecond"/>
+        <Class IRI="/SpeedUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Micrometre"/>
+        <Class IRI="/DistanceUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MicroscopyImage"/>
+        <Class IRI="/RepresentationExperimentalResults"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Milimetre"/>
+        <Class IRI="/DistanceUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MineralOil"/>
+        <Class IRI="/Lubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Minute"/>
+        <Class IRI="/TimeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Model"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ModelRepresentation"/>
+        <Class IRI="/Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ModelTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Newton"/>
+        <Class IRI="/ForceUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Newtonmeter"/>
+        <Class IRI="/TorqueUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NormalForce"/>
+        <Class IRI="/Force"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ObjectOfExperiment"/>
+        <Class IRI="/ActorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OperationalParameter"/>
+        <Class IRI="/ExperimentalFactor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Output"/>
+        <Class IRI="/FactorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Parameter"/>
+        <Class IRI="/Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Parameter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Parameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="/hasValue"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Part"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pascal"/>
+        <Class IRI="/PressureUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PenningValue"/>
+        <Class IRI="/Pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Percentage"/>
+        <Class IRI="/ConcentrationUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalExperiment"/>
+        <Class IRI="/ScientificExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalExperiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/isCarriedOutBy"/>
+            <Class IRI="/Device"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalObject"/>
+        <Class IRI="/Physical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalObject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/usedIn"/>
+            <ObjectUnionOf>
+                <Class IRI="/ReferenceGroup"/>
+                <Class IRI="/ReferenceSample"/>
+                <Class IRI="/Sample"/>
+                <Class IRI="/SampleGroup"/>
+                <Class IRI="/TestSeries"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PhysicalQuantity"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PiraniValue"/>
+        <Class IRI="/Pressure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PoissonsRatio"/>
+        <Class IRI="/DimensionlessQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PoissonsRatio"/>
+        <Class IRI="/MaterialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Polishing"/>
+        <Class IRI="/IndustrialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PourpointDepressant"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Predicate"/>
+        <Class IRI="/Relation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pressure"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pressure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/PressureUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PressureUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Procedure"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Procedure"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasParameter"/>
+            <Class IRI="/Parameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Process-relatedRole"/>
+        <Class IRI="/Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ProductRole"/>
+        <Class IRI="/Process-relatedRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Proposition"/>
+        <Class IRI="/Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ra"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ra"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RandomError"/>
+        <Class IRI="/MeasurementError"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ReducedYoungsModulus"/>
+        <Class IRI="/YoungsModulus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ReferenceGroup"/>
+        <Class IRI="/GroupExperimentalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ReferenceGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasReferenceSample"/>
+            <Class IRI="/ReferenceSample"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ReferenceSample"/>
+        <Class IRI="/ObjectOfExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ReferenceSample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/assessedBy"/>
+            <Class IRI="/TribologicalTesting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RelatedDomain"/>
+        <Class IRI="/FieldOfStudy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Relation"/>
+        <Class IRI="/Abstract"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RelativeHumidity"/>
+        <Class IRI="/Humidity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Representation"/>
+        <Class IRI="/ContentBearingObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RepresentationExperimentalResults"/>
+        <Class IRI="/Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ResultingPerformance"/>
+        <Class IRI="/ExperimentalConclusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ResultsDiagramm"/>
+        <Class IRI="/RepresentationExperimentalResults"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rk"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rk"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Role"/>
+        <Class IRI="/Predicate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rolling"/>
+        <Class IRI="/KinematicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RotationSpeed"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rp"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rp"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rpk"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rpk"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rq"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rq"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rsk"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rsk"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Runtime"/>
+        <Class IRI="/Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rv"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rv"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rvk"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rvk"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rz"/>
+        <Class IRI="/SurfaceRoughness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Rz"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/Micrometre"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SIUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SIbaseUnit"/>
+        <Class IRI="/SIUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SIderivedUnit"/>
+        <Class IRI="/SIUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sample"/>
+        <Class IRI="/ObjectOfExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sample"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/assessedBy"/>
+            <Class IRI="/TribologicalTesting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleGroup"/>
+        <Class IRI="/GroupExperimentalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/comparedWith"/>
+            <Class IRI="/ReferenceGroup"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasSample"/>
+            <Class IRI="/Sample"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/resultsIn"/>
+            <Class IRI="/ExperimentalResults"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasTargetVariable"/>
+            <Class IRI="/TargetVariable"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SampleTest"/>
+        <Class IRI="/CategoriesOfTribologicalTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ScientificExperiment"/>
+        <Class IRI="/Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Second"/>
+        <Class IRI="/TimeUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sliding"/>
+        <Class IRI="/KinematicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SlidingCycle"/>
+        <Class IRI="/Amount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SlidingDistance"/>
+        <Class IRI="/Distance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SolidLubricant"/>
+        <Class IRI="/Lubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Speed"/>
+        <Class IRI="/Velocity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SpeedUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sphere"/>
+        <Class IRI="/VolumeElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Spinning"/>
+        <Class IRI="/KinematicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Steel"/>
+        <Class IRI="/StructuralMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SteelHeatTreatment"/>
+        <Class IRI="/HeatTreatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SteelSteel"/>
+        <Class IRI="/MaterialPairing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Stress"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Stress"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/PressureUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StressCollective"/>
+        <Class IRI="/DomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StressCollective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasKinematicalParameter"/>
+            <Class IRI="/KinematicalParameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StressCollective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasOperationalParameter"/>
+            <Class IRI="/OperationalParameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StructuralMaterial"/>
+        <Class IRI="/Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SubjectOfExperiment"/>
+        <Class IRI="/SubjectRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SubjectRole"/>
+        <Class IRI="/ActorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Substrate"/>
+        <Class IRI="/PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Substrate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasParameter"/>
+            <Class IRI="/SurfaceRoughness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SurfaceRoughness"/>
+        <Class IRI="/TribologicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Synthesis"/>
+        <Class IRI="/IndustrialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SyntheticOil"/>
+        <Class IRI="/Lubricant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SystematicError"/>
+        <Class IRI="/MeasurementError"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TargetVariable"/>
+        <Class IRI="/Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TaskRole"/>
+        <Class IRI="/Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TechnicalDescription"/>
+        <Class IRI="/Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Temperature"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Temperature"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/TemperatureUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TemperatureUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TestSeries"/>
+        <Class IRI="/ObjectOfExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TestSeries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasHypothesis"/>
+            <Class IRI="/ExperimentalHypothesis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TestSeries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/resultsIn"/>
+            <Class IRI="/ExperimentalResults"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ti3C2"/>
+        <Class IRI="/MXene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Time"/>
+        <Class IRI="/PhysicalQuantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/TimeUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TimeStamp"/>
+        <Class IRI="/Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TimeUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TitaniumCarbide"/>
+        <Class IRI="/Carbide"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TorqueUnit"/>
+        <Class IRI="/Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboElement"/>
+        <Class IRI="/DomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboSystem"/>
+        <Class IRI="/DomainModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasAmbientMedium"/>
+            <Class IRI="/AmbientMedium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboSystem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasInterfacialMedium"/>
+            <Class IRI="/InterfacialMedium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboSystem"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasBody"/>
+            <Class IRI="/Body"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TriboSystem"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasCounterBody"/>
+            <Class IRI="/CounterBody"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalParameter"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalReferenceMethod"/>
+        <Class IRI="/ExperimentalModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalReferenceMethod"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasContact"/>
+            <Class IRI="/Contact"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalReferenceMethod"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasStressCollective"/>
+            <Class IRI="/StressCollective"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalReferenceMethod"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasTriboSystem"/>
+            <Class IRI="/TriboSystem"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalTesting"/>
+        <Class IRI="/PhysicalExperiment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalTesting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasOutput"/>
+            <Class IRI="/MeasurementSeries"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/TribologicalTesting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasInput"/>
+            <Class IRI="/Input"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ultrasonication"/>
+        <Class IRI="/IndustrialProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Unit"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Variable"/>
+        <Class IRI="/Proposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Velocity"/>
+        <Class IRI="/Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Velocity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/SpeedUnit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ViscosityindexImprover"/>
+        <Class IRI="/Additive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Volt"/>
+        <Class IRI="/ElectricPotentialUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Volt"/>
+        <Class IRI="/SIderivedUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Voltage"/>
+        <Class IRI="/ElectricPotentialDifference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VolumeElement"/>
+        <Class IRI="/GeometryElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WearBehavior"/>
+        <Class IRI="/ResultingPerformance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WearIncrease"/>
+        <Class IRI="/WearBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WearReduction"/>
+        <Class IRI="/WearBehavior"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WearVolume"/>
+        <Class IRI="/TribologicalParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WearVolume"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="/resultsIn"/>
+            <Class IRI="/WearBehavior"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Width"/>
+        <Class IRI="/Distance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Width"/>
+        <Class IRI="/Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/YoungsModulus"/>
+        <Class IRI="/MaterialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/YoungsModulus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/hasUnit"/>
+            <Class IRI="/PressureUnit"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/100Cr6"/>
+        <Class IRI="/BearingSteel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/2dCompound"/>
+        <Class IRI="/Compound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasContact"/>
+                <Class IRI="/Contact"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasStressCollective"/>
+                <Class IRI="/StressCollective"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="/hasTriboSystem"/>
+                <Class IRI="/TriboSystem"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="/TribologicalReferenceMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="/hasReferenceGroup"/>
+                <Class IRI="/ReferenceGroup"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="/hasSampleGroup"/>
+                <Class IRI="/SampleGroup"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+        <Class IRI="/TestSeries"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/ReferenceGroup"/>
+        <Class IRI="/SampleGroup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/ReferenceSample"/>
+        <Class IRI="/Sample"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/Bar"/>
+        <NamedIndividual IRI="/Bar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Celsius"/>
+        <NamedIndividual IRI="/Celsius"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Electronvolt"/>
+        <NamedIndividual IRI="/Electronvolt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Gigapascal"/>
+        <NamedIndividual IRI="/Gigapascal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Gram"/>
+        <NamedIndividual IRI="/Gram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Hour"/>
+        <NamedIndividual IRI="/Hour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Kelvin"/>
+        <NamedIndividual IRI="/Kelvin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/KiloVolt"/>
+        <NamedIndividual IRI="/KiloVolt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Kilogram"/>
+        <NamedIndividual IRI="/Kilogram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Megabar"/>
+        <NamedIndividual IRI="/Megabar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Megapascal"/>
+        <NamedIndividual IRI="/Megapascal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Metre"/>
+        <NamedIndividual IRI="/Metre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MetrePerSecond"/>
+        <NamedIndividual IRI="/MetrePerSecond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Micrometre"/>
+        <NamedIndividual IRI="/Micrometre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Milimetre"/>
+        <NamedIndividual IRI="/Milimetre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Minute"/>
+        <NamedIndividual IRI="/Minute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Newton"/>
+        <NamedIndividual IRI="/Newton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Pascal"/>
+        <NamedIndividual IRI="/Pascal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Percentage"/>
+        <NamedIndividual IRI="/Percentage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Temperature"/>
+        <NamedIndividual IRI="/RT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Speed"/>
+        <NamedIndividual IRI="/SP1000"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasUnit"/>
+        <NamedIndividual IRI="/SP1000"/>
+        <NamedIndividual IRI="/MetrePerSecond"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/hasValue"/>
+        <NamedIndividual IRI="/SP1000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.08</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/coatedWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasAmbientMedium"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasBody"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasContact"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCounterBody"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasHypothesis"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasInput"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasInterfacialMedium"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasKinematicalParameter"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasMaterial"/>
+        <ObjectProperty IRI="/hasParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasOperationalParameter"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasOutput"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasParameter"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasReferenceGroup"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasReferenceSample"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasRepresentation"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasSample"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasSampleGroup"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasStrategy"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasStressCollective"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasTargetVariable"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasTriboSystem"/>
+        <ObjectProperty IRI="/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasUnit"/>
+        <ObjectProperty IRI="/hasContent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isAmbientMediumOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isBodyOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isContactOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCounterBodyOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isHypothesisOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isInputOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isInterfacialMediumOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isKinematicalParameterOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isMaterialOf"/>
+        <ObjectProperty IRI="/isParameterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isOperationalParameterOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isOutputOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isParameterOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isReferenceGroupOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isReferenceSampleOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isRepresentationOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isSampleGroupOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isSampleOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isStrategyOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isStressCollectiveOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isTargetVariableOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isTriboSystemOf"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isUnitOf"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/carriesOut"/>
+        <ObjectProperty IRI="/isCarriedOutBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasAmbientMedium"/>
+        <ObjectProperty IRI="/isAmbientMediumOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasBody"/>
+        <ObjectProperty IRI="/isBodyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasContact"/>
+        <ObjectProperty IRI="/isContactOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasContent"/>
+        <ObjectProperty IRI="/isContentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasCounterBody"/>
+        <ObjectProperty IRI="/isCounterBodyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasHypothesis"/>
+        <ObjectProperty IRI="/isHypothesisOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasInput"/>
+        <ObjectProperty IRI="/isInputOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasInterfacialMedium"/>
+        <ObjectProperty IRI="/isInterfacialMediumOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasKinematicalParameter"/>
+        <ObjectProperty IRI="/isKinematicalParameterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasMaterial"/>
+        <ObjectProperty IRI="/isMaterialOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasOperationalParameter"/>
+        <ObjectProperty IRI="/isOperationalParameterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasOutput"/>
+        <ObjectProperty IRI="/isOutputOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasParameter"/>
+        <ObjectProperty IRI="/isParameterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasPart"/>
+        <ObjectProperty IRI="/isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasReferenceGroup"/>
+        <ObjectProperty IRI="/isReferenceGroupOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasReferenceSample"/>
+        <ObjectProperty IRI="/isReferenceSampleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasRepresentation"/>
+        <ObjectProperty IRI="/isRepresentationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasSample"/>
+        <ObjectProperty IRI="/isSampleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasSampleGroup"/>
+        <ObjectProperty IRI="/isSampleGroupOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasStrategy"/>
+        <ObjectProperty IRI="/isStrategyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasStressCollective"/>
+        <ObjectProperty IRI="/isStressCollectiveOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasTargetVariable"/>
+        <ObjectProperty IRI="/isTargetVariableOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasTriboSystem"/>
+        <ObjectProperty IRI="/isTriboSystemOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasUnit"/>
+        <ObjectProperty IRI="/isUnitOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="/comparedWith"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/assessedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/hasPart"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/hasTargetVariable"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/isPartOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="/resultsIn"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/carriesOut"/>
+        <Class IRI="/Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/coatedWith"/>
+        <Class IRI="/Substrate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAmbientMedium"/>
+        <Class IRI="/TriboSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasBody"/>
+        <Class IRI="/TriboSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCounterBody"/>
+        <Class IRI="/TriboSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInterfacialMedium"/>
+        <Class IRI="/TriboSystem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasKinematicalParameter"/>
+        <Class IRI="/StressCollective"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasOperationalParameter"/>
+        <Class IRI="/StressCollective"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/carriesOut"/>
+        <Class IRI="/Procedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAmbientMedium"/>
+        <Class IRI="/AmbientMedium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasBody"/>
+        <Class IRI="/Body"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasContact"/>
+        <Class IRI="/Contact"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCounterBody"/>
+        <Class IRI="/CounterBody"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasHypothesis"/>
+        <Class IRI="/ExperimentalHypothesis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasInput"/>
+        <Class IRI="/Input"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasInterfacialMedium"/>
+        <Class IRI="/InterfacialMedium"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasKinematicalParameter"/>
+        <Class IRI="/KinematicalParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasMaterial"/>
+        <Class IRI="/Material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasOperationalParameter"/>
+        <Class IRI="/OperationalParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasOutput"/>
+        <Class IRI="/Output"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasParameter"/>
+        <Class IRI="/Parameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasReferenceGroup"/>
+        <Class IRI="/ReferenceGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasReferenceSample"/>
+        <Class IRI="/ReferenceSample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasRepresentation"/>
+        <Class IRI="/Representation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSample"/>
+        <Class IRI="/Sample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSampleGroup"/>
+        <Class IRI="/SampleGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasStrategy"/>
+        <Class IRI="/ExperimentalDesignStrategy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasStressCollective"/>
+        <Class IRI="/StressCollective"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTargetVariable"/>
+        <Class IRI="/TargetVariable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasTriboSystem"/>
+        <Class IRI="/TriboSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasUnit"/>
+        <Class IRI="/Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/processedBy"/>
+        <Class IRI="/IndustrialProcess"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="/hasReferenceGroup"/>
+        <ObjectProperty IRI="/hasSampleGroup"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="/hasReferenceSample"/>
+        <ObjectProperty IRI="/hasSample"/>
+    </DisjointObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="/isContactOf"/>
+            <ObjectProperty IRI="/hasTriboSystem"/>
+            <ObjectProperty IRI="/hasBody"/>
+            <ObjectProperty IRI="/hasMaterial"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="/hasMaterial"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="/isContactOf"/>
+            <ObjectProperty IRI="/hasTriboSystem"/>
+            <ObjectProperty IRI="/hasCounterBody"/>
+            <ObjectProperty IRI="/hasMaterial"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="/hasMaterial"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="/isTargetVariableOf"/>
+            <ObjectProperty IRI="/resultsIn"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="/isTargetVariableOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="/usedIn"/>
+            <ObjectProperty IRI="/hasPart"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="/usedIn"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/MeasurementPoint"/>
+        <DataProperty IRI="/MetricEvent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/TimeStamp"/>
+        <DataProperty IRI="/MetricEvent"/>
+    </SubDataPropertyOf>
+    <DataPropertyRange>
+        <DataProperty IRI="/TimeStamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Abstract</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Abstract</IRI>
+        <Literal>&quot;Properties or qualities as distinguished from any particular embodiment of the properties/qualities in a physical medium. Instances of Abstract can be said to exist in the same sense as mathematical objects such as sets and relations, but they cannot exist at a particular place and time without some physical encoding or embodiment.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Action-relatedRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ActorRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Additive</IRI>
+        <Literal>Additives are auxiliary substances or additions that are mixed into lubricants in small quantities in order to achieve or improve certain properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AggregateTest</IRI>
+        <Literal>Cat.III: Examination of original individual aggregates under practical conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AmbientMedium</IRI>
+        <Literal>Substances (liquid or gas) surrounding the contacting bodies. The ambient medium is defined by its type, composition and material properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AntifoamingAgent</IRI>
+        <Literal>Silicone compounds which increase surface tension in order to discourage foam formation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Antioxidant</IRI>
+        <Literal>Suppress the rate of oxidative degradation of the hydrocarbon molecules within the lubricant at low temperatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/s11249-015-0589-z</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AntiwearAdditive</IRI>
+        <Literal>Form protective &apos;tribofilms&apos; on metal parts, suppressing wear. They come in two classes depending on the strength with which they bind to the surface. Popular examples include phosphate esters and zinc dithiophosphates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Bar</IRI>
+        <Literal>bar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/materialMetadata/norm"/>
+        <IRI>/BearingSteel</IRI>
+        <Literal>ISO 683-17</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BenchTest</IRI>
+        <Literal>Cat.II: Examination of original complete tribotechnical systems under practical operating conditions on a test bench.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Binding_energy</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BindingEnergy</IRI>
+        <Literal>In physics, binding energy (also called separation energy) is the minimum energy required to disassemble a system of particles into separate parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1016/j.rser.2018.05.024</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/BioLubricant</IRI>
+        <Literal>Biolubricants, or bio-based lubricants, are generally perceived asenvironmentally friendly, biodegradable and non-toxic lubricantswhich are derived from renewable resources such as plant oils andanimal fats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Body</IRI>
+        <Literal>Any number of three-dimensional solid bodies in the focus of the tribological investigation which are contacting the counter body/bodies. 
+The body is defined by its shape and material properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Bumping</IRI>
+        <Literal>A bouncing-like collision of two bodies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/carbide</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Carbide</IRI>
+        <Literal>A binary compound of carbon with an element of lower or comparable electronegativity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Celsius</IRI>
+        <Literal>°C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-0-470-82299-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Characterization</IRI>
+        <Literal>Refers to the broad and general process by which a material&apos;s structure and properties are probed and measured. The scope of the term often differs; some definitions limit the term&apos;s use to techniques which study the microscopic structure and properties of materials, while others use the term to refer to any materials analysis process including macroscopic techniques such as mechanical testing, thermal analysis and density calculation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/en/definition/coefficient_of_friction</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CoefficientOfFriction</IRI>
+        <Literal>The ratio between the force necessary to move one surface horizontally over another and the pressure between the two surfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ComponentTest</IRI>
+        <Literal>Cat.IV: Component investigations (original or simplified) under practical operating conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-138-07551-1</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Compound</IRI>
+        <Literal>A composite material made from two or more constituent materials with significantly different physical or chemical properties that, when combined, produce a material with characteristics different from the individual components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ComputationalExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ComputationalExperiment</IRI>
+        <Literal>A computational experiment is a scientific experiment which investigates cause-effect relations between known and unknown (target) variables by manipulating the computational (non-physical) domain adequate to the real-world domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/concentration</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Concentration</IRI>
+        <Literal>The relative amount of a particular substance contained within a solution or mixture or in a particular volume of space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Contact</IRI>
+        <Literal>A physical interaction between two things (e.g. bodies).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ContentBearingObject</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ContentBearingObject</IRI>
+        <Literal>Any SelfConnectedObject that expresses content. This content may be a Proposition, e.g. when the ContentBearingObject is a Sentence or Text, or it may be a representation of an abstract or physical object, as with an Icon, a Word or a Phrase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ContentBearingPhysical</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ContentBearingPhysical</IRI>
+        <Literal>Any Object or Process that expresses content. This covers Objects that contain a Proposition, such as a book, as well as ManualSignLanguage, which may similarly contain a Proposition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wiktionary.org/wiki/correction_factor</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CorrectionFactor</IRI>
+        <Literal>A factor that is multiplied with the result of an equation to correct for a known amount of systematic error.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CorrosionInhibitor</IRI>
+        <Literal>Alkaline materials, such as alkylsulfonate salts, that absorb acids that would corrode metal parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CounterBody</IRI>
+        <Literal>Any number of three-dimensional bodies (solid, liquid or gas) which are contacting the body/bodies in the focus of the tribological investigation. 
+The counter body is defined by its shape and material properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/cylinder</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Cylinder</IRI>
+        <Literal>A solid geometrical figure with straight parallel sides and a circular or oval cross section.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DMSValue</IRI>
+        <Literal>Value which is measured by DMS (e.g. pressure or force).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Detergent</IRI>
+        <Literal>Ensure the cleanliness of engine components by preventing the formation of deposits on contact surfaces at high temperatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Device</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Device</IRI>
+        <Literal>A Device is an Artifact whose purpose is to serve as an instrument in a specific subclass of Process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Device</IRI>
+        <Literal>A device is an experimental equipment that processes data according to a set of instructions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DimensionlessQuantity</IRI>
+        <Literal>A quantity which has no unit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/distance</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Distance</IRI>
+        <Literal>The length of the space between two points.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/DomainModel</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DomainModel</IRI>
+        <Literal>A domain model is a description of relationships (e.g. logical/ mathematical) between known and unknown variables of the experimental domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/DomainOfExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DomainOfExperiment</IRI>
+        <Literal>A domain of an experiment is a field of study in which an experiment is designed to discover new knowledge.
+
+Here used to sign which domain is affected by the results of the experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Electronvolt</IRI>
+        <Literal>eV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/energy</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Energy</IRI>
+        <Literal>The property of matter and radiation which is manifest as a capacity to perform work (such as causing motion or the interaction of molecules).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Error</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>USGS glossary (biology.usgs.gov/npsveg/glossary.html)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Error</IRI>
+        <Literal>An error is the difference between observations or computations from the true values, or to values that are accepted as being true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalConclusion</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalConclusion</IRI>
+        <Literal>An experimental conclusion is a conclusion inferred from experimental observations and other experimental data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalDesignStrategy</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalDesignStrategy</IRI>
+        <Literal>An experimental design strategy is a collection of typical techniques applied to an experimental design.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalEquipment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>Collins Softback English Dictionary, HarperCollins Publishers, Glasgow, 1993</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalEquipment</IRI>
+        <Literal>Experimental equipment is the set of tools, devices, materials, computer systems assembled for performing the experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalFactor</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalFactor</IRI>
+        <Literal>An experimental factor is a known variable of the model of the domain which the object of the experiment can control/vary in order to determine of a value of target variables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalHypothesis</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalHypothesis</IRI>
+        <Literal>An experimental hypothesis is a statement about cause-effect relations between known and unknown (target) variables of the domain of the experiment &quot;that shall be in accordance with known facts*&quot; to be verified at the experiment.
+
+Here also used in a wider sense as &quot;Research Goal&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalModel</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalModel</IRI>
+        <Literal>An experimental model is a description of dependencies (e.g. logical/mathematical) between experimental factors, others known variables, and unknown variables.  The experimental model is obtained from the domain model by fixing experimental factors from the list of known controllable variables and the target variables from the list of unknown variables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalModel</IRI>
+        <Literal>In the case of tribological experiments, there exist not only experimental factors or variables to describe the model of a tribological experiment. Moreover, there are different models which form a reference model or method (e.g. domain models of interactions, tribo-elements or stress collective).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ExperimentalResults</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExperimentalResults</IRI>
+        <Literal>Experimental results are the set of facts and conclusions, obtained as a result of the interpretation of the experimental observations, which increase/decrease the probability of a research hypothesis of the experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ExtremepressureAdditive</IRI>
+        <Literal>Form protective films on sliding metal parts. These agents are often sulfur compounds, such as dithiophosphates.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FROM</IRI>
+        <Literal>To sign, from where a concept or definition comes from. If used as Annotation to rdfs:comment, it is the source of the comment. If used as Annotation to a concept or property, it signs the source of it.
+If the concept and the definition is from the same source, it is sufficient to sign only the concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FactorRole</IRI>
+        <Literal>The role of a factor which can be an input to a process/procedure or an output of it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/FieldOfStudy</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FieldOfStudy</IRI>
+        <Literal>An academic or applied discipline with recognized experts and with a core of accepted theory or practice. Note that FieldOfStudy is a subclass of Proposition, because a FieldOfStudy is understood to be a body of abstract, informational content, with varying degrees of certainty attached to each element of this content.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FieldTest</IRI>
+        <Literal>Cat.I: Examination of original complete tribotechnical systems under original operating conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/force</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Force</IRI>
+        <Literal>Strength or energy as an attribute of physical action or movement.
+An influence tending to change the motion of a body or produce motion or stress in a stationary body. The magnitude of such an influence is often calculated by multiplying the mass of the body and its acceleration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FrictionForce</IRI>
+        <Literal>A force caused by friction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1002/14356007.a15_423.pub2</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FrictionModifier</IRI>
+        <Literal>Reduce friction and wear, particularly in the boundary lubrication regime where surfaces come into direct contact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FrictionRadius</IRI>
+        <Literal>The area in which friction forces apear.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/FrictionalBehavior</IRI>
+        <Literal>Properties of an tribological system regarding the force that opposes the relative motion or tendency of such motion of two surfaces in contact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Geometry</IRI>
+        <Literal>Parameters, which are concerned with shape, size, relative position and space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/GeometryElement</IRI>
+        <Literal>Elements, which have a specific, describable form. Often they are the basis for every other geometry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Gigapascal</IRI>
+        <Literal>GPa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Goal</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Gram</IRI>
+        <Literal>g</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://web.archive.org/web/20090417002357/http://www.barks.com/2002/02-04feat.html</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Grease</IRI>
+        <Literal>Grease is a semisolid lubricant consisting of a soap emulsified with mineral or vegetable oil.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Grinding</IRI>
+        <Literal>Abrasive machining process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/GroupExperimentalObject</IRI>
+        <Literal>A group of experimental objects is a collection of studying in a scientific investigation objects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Heat_treating</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HeatTreatment</IRI>
+        <Literal>Heat treating is a group of industrial, thermal and metalworking processes used to alter the physical, and sometimes chemical, properties of a material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Hour</IRI>
+        <Literal>h</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/humidity</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Humidity</IRI>
+        <Literal>A quantity representing the amount of water vapour in the atmosphere or in a gas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/HypothesisRepresentation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HypothesisRepresentation</IRI>
+        <Literal>The representation form of the experimental hypothesis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Industrial_processes</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/IndustrialProcess</IRI>
+        <Literal>Industrial processes are procedures involving chemical, physical, electrical or mechanical steps to aid in the manufacturing of an item or items, usually carried out on a very large scale. Industrial processes are the key components of heavy industry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Input</IRI>
+        <Literal>For instance, within a production process different materials are an Input in a manufacturing subprocess.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/input</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Input</IRI>
+        <Literal>What is put in, taken in, or operated on by any process or system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Interaction</IRI>
+        <Literal>Used to sign which kind of interaction between at least two things (e.g. parts, surfaces) exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/InterfacialMedium</IRI>
+        <Literal>Substances (solid, liquid or gas) that can come into contact between body and counterbody from the environment or from the contacting bodies. The interfacial medium is defined by its type, composition and material properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Kelvin</IRI>
+        <Literal>K</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/KiloVolt</IRI>
+        <Literal>kV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Kilogram</IRI>
+        <Literal>kg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/KinematicalParameter</IRI>
+        <Literal>tbd.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LogicalHypothesisRepresentation</IRI>
+        <Literal>A logical representation of the hypothesis, e.g. a logical programm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/LogicalModelRepresentation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LogicalModelRepresentation</IRI>
+        <Literal>A logical model is a representation of an experimental model where the relationship between the variables is logical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Lubricant</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Lubricant</IRI>
+        <Literal>A lubricant is a substance, usually organic, introduced to reduce friction between surfaces in mutual contact, which ultimately reduces the heat generated when the surfaces move. It may also have the function of transmitting forces, transporting foreign particles, or heating or cooling the surfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Material</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Material</IRI>
+        <Literal>A material is a substance or mixture of substances that constitutes an object. Materials can be pure or impure, living or non-living matter. Materials can be classified based on their physical and chemical properties, or on their geological origin or biological function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MaterialPairing</IRI>
+        <Literal>Signs contact pairs between different material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MaterialProperty</IRI>
+        <Literal>Properties a material has independent of the amount of material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MathematicalHypothesisRepresentation</IRI>
+        <Literal>A mathematical representation of the hypothesis e.g. a function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/MathematicalModelRepresentation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MathematicalModelRepresentation</IRI>
+        <Literal>A mathematical model is a representation of an experimental model where the relationship between the variables is mathematical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/MeasurementError</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>Arley, N. &amp; Buch , K.R., Introduction to the theory of probability and statistics. New York : Wiley London. Chapman &amp; Hall, 1950. 236p
+ https://doi.org/10.1002/9780470316849.oth1</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MeasurementError</IRI>
+        <Literal>A measurement error is an error involving the observation of a physical quantity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MeasurementSeries</IRI>
+        <Literal>The measurement series groups single measurement points as single objects for each measured parameter as a series.
+For instance, a series of all measured COFs from one test series is a measurement series for the parameter COF.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Megabar</IRI>
+        <Literal>mbar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Megapascal</IRI>
+        <Literal>MPa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Metre</IRI>
+        <Literal>m</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/MetrePerSecond</IRI>
+        <Literal>m/s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MetricEvent</IRI>
+        <Literal>An event of measurement within a measurement series. Every measurement must have one metric event to sign which parameters are measured at which event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Micrometre</IRI>
+        <Literal>μm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MicroscopyImage</IRI>
+        <Literal>Images generated by microscopy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Milimetre</IRI>
+        <Literal>mm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Lubricant#Mineral_oil</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/MineralOil</IRI>
+        <Literal>Lubricating base oils derived from crude oil.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Minute</IRI>
+        <Literal>min</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Model</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/model</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Model</IRI>
+        <Literal>A simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ModelRepresentation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ModelRepresentation</IRI>
+        <Literal>A model representation is a formalized description of the experimental model, for instance a text or formulas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ModelTest</IRI>
+        <Literal>Cat.VI: Fundamental research on friction and wear behavior with special test samples under arbitrary, but defined conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Newton</IRI>
+        <Literal>N</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ObjectOfExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ObjectOfExperiment</IRI>
+        <Literal>An object of an experiment is &quot;on whom an experiment is made.&quot; For instance: a &lt;plant&gt;, a &lt;robot&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/OperationalParameter</IRI>
+        <Literal>A value or component to quantify the the stress collective on the contacting bodies of the tribosystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Output</IRI>
+        <Literal>Every Process has an output, which is the result of the process. For instance, a production process has a complete product as an output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/en/definition/output</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Output</IRI>
+        <Literal>The amount of something produced by a person, machine, or industry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/en/definition/parameter</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Parameter</IRI>
+        <Literal>A numerical or other measurable factor forming one of a set that defines a system or sets the conditions of its operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Pascal</IRI>
+        <Literal>Pa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PenningValue</IRI>
+        <Literal>Pressure which is measured in vaccuum. The range of measurement is less precise as Pirani.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Percentage</IRI>
+        <Literal>%</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Physical</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/PhysicalExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PhysicalExperiment</IRI>
+        <Literal>A physical experiment is a scientific experiment which investigates cause-effect relations between known and unknown variables by manipulating the real-world (physical) domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PhysicalObject</IRI>
+        <Literal>Physical objects in the engineering domain, such as materials and lubricants for the tribological domain or even parts and assemblies in general engineering design.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/quantity</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PhysicalQuantity</IRI>
+        <Literal>A value or component that may be expressed in numbers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PiraniValue</IRI>
+        <Literal>Pressure which is measured in vaccuum. The range of measurement is more precise as penning, thus is used for fine vacuum.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PoissonsRatio</IRI>
+        <Literal>Ratio of lateral strain to axial strain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Polishing_(metalworking)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Polishing</IRI>
+        <Literal>Finishing processes for smoothing a workpiece&apos;s surface using an abrasive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/PourpointDepressant</IRI>
+        <Literal>Compounds that prevent crystallization of waxes. Long chain alkylbenzenes adhere to small crystallites of wax, preventing crystal growth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Predicate</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Predicate</IRI>
+        <Literal>A Predicate is a sentence-forming Relation. Each tuple in the Relation is a finite, ordered sequence of objects. The fact that a particular tuple is an element of a Predicate is denoted by &apos;(*predicate* arg_1 arg_2 .. arg_n)&apos;, where the arg_i are the objects so related. In the case of BinaryPredicates, the fact can be read as `arg_1 is *predicate* arg_2&apos; or `a *predicate* of arg_1 is arg_2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/pressure</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Pressure</IRI>
+        <Literal>The force per unit area exerted by [,for instance,] a fluid against a surface with which it is in contact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Procedure</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Procedure</IRI>
+        <Literal>A sequence-dependent specification. Some examples are ComputerPrograms, finite-state machines, cooking recipes, musical scores, conference schedules, driving directions, and the scripts of plays and movies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Process-relatedRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Process-relatedRole</IRI>
+        <Literal>Product role (Final output); Residue role (How it is processed).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ProductRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ProductRole</IRI>
+        <Literal>Final output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Proposition</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Proposition</IRI>
+        <Literal>Propositions are Abstract entities that express a complete thought or a set of such thoughts. As an example, the formula &apos; (instance Yojo Cat)&apos; expresses the Proposition that the entity named Yojo is an element of the Class of Cats. Note that propositions are not restricted to the content expressed by individual sentences of a Language. They may encompass the content expressed by theories, books, and even whole libraries. It is important to distinguish Propositions from the ContentBearingObjects that express them. A Proposition is a piece of information, e.g. that the cat is on the mat, but a ContentBearingObject is an Object that represents this information. A Proposition is an abstraction that may have multiple representations: strings, sounds, icons, etc. For example, the Proposition that the cat is on the mat is represented here as a string of graphical characters displayed on a monitor and/or printed on paper, but it can be represented by a sequence of sounds or by some non-latin alphabet or by some cryptographic form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RT</IRI>
+        <Literal>A temperature between 18°C and 25°C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RT</IRI>
+        <Literal>Room Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ra</IRI>
+        <Literal>arithmetic average height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN 978-0-935702-75-0</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RandomError</IRI>
+        <Literal>Experimental uncertanties that can be revealed by repeating the measurements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ReferenceGroup</IRI>
+        <Literal>The group of specimens, which the samplegroup is compared with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ReferenceSample</IRI>
+        <Literal>A reference against which the sample is tested.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/RelatedDomain</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RelatedDomain</IRI>
+        <Literal>A related domain of an experiment is a domain (field of study) to which belong used in the experiment methods, materials, experimental objects, or other entities involved into the experiment, but is not considered as the domain of the experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Relation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>SUMO (http://www.adampease.org/OP)</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Relation</IRI>
+        <Literal>The Class of relations. There are three kinds of Relation: Predicate, Function, and List. Predicates and Functions both denote sets of ordered n-tuples. The difference between these two Classes is that Predicates cover formula-forming operators, while Functions cover term-forming operators. A List, on the other hand, is a particular ordered n-tuple.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RelativeHumidity</IRI>
+        <Literal>Ratio of the partial pressure of water vapor to the equilibrium vapor pressure of water at a given temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Representation</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ResultingPerformance</IRI>
+        <Literal>A specification of experimental conclusion due to the domain of tribology.
+Within tribological experiments, assertions about friction and wear performance are two of the main task in experimental investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ResultsDiagramm</IRI>
+        <Literal>Diagrams are a typical outcome for interpreting experimental results in the domain of tribology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rk</IRI>
+        <Literal>core roughness depth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Role</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Role</IRI>
+        <Literal>(role ?OBJECT ?ENTITY) means that ?OBJECT - a Role holder, plays a  Role ?ENTITY   in some context. In EXPO we always consider the context: experiment. For example in context of experiment an object &lt;human&gt; can play the role &lt;subject of experiment&gt; if the human is &quot;one who executes the experiment&quot; (OED) or the role &lt;object of experiment&gt; if the human is one &quot;on whom an experiment is made.&quot; (OED).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>GfT Arbeitsblatt 7</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rolling</IRI>
+        <Literal>Relative movement between bodies in point or line contact (idealised), whose speeds in the contact surface are equal in magnitude and direction and in which at least one body performs a rotational movement about an axis of rotation lying in the instantaneous contact surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>Atkins&amp;Escudier (2013). A Dictionary of Mechanical Engineering. Oxford University Press</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RotationSpeed</IRI>
+        <Literal>For an object rotating about a fixed axis, the speed of rotation is the number of turns (revolutions) of the object per unit time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rp</IRI>
+        <Literal>maximum height of peaks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rpk</IRI>
+        <Literal>reduced peak height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rq</IRI>
+        <Literal>root mean square roughness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rsk</IRI>
+        <Literal>skewness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Runtime</IRI>
+        <Literal>The length of time during a process or procedure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rv</IRI>
+        <Literal>maximum depth of valleys</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rvk</IRI>
+        <Literal>reduced valley depth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Rz</IRI>
+        <Literal>ten-point height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/si_unit</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SIUnit</IRI>
+        <Literal>A physical unit in the international SI system, which is based on the metre, kilogram, second, ampere, kelvin, candela, and mole, together with a set of prefixes to indicate multiplication or division by a power of ten.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SP1000</IRI>
+        <Literal>Speed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/Sample</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Sample</IRI>
+        <Literal>A sample is &quot;a portion drawn from a population (EXPO: &lt;parent group&gt;), the study of which is intended to lead to statistical estimates of the attributes of the whole population.&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SampleBodyID</IRI>
+        <Literal>This annotation property is used to document a specific ID, which signs the physical individual, which was used as counterbody in the experimental setup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SampleCounterBodyID</IRI>
+        <Literal>This annotation property is used to document a specific ID, which signs the physical individual, which was used as counterbody in the experimental setup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SampleGroup</IRI>
+        <Literal>The group of specimens, which are the object of the investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SampleTest</IRI>
+        <Literal>Cat.V: Examination with component-like test samples under realisitc stress collectives.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/ScientificExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ScientificExperiment</IRI>
+        <Literal>A scientific experiment is a research method which permits the investigation of cause-effect relations between known and unknown (target) variables of the field of study (domain). An experimental result cannot be known with certainty in advance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>GfT Arbeitsblatt 7</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Sliding</IRI>
+        <Literal>Tangential relative movement of a solid body in contact with another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SlidingCycle</IRI>
+        <Literal>The amount of cycles in a experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SlidingDistance</IRI>
+        <Literal>Distance covered by motions in a tribological experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1002/14356007.a15_423</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SolidLubricant</IRI>
+        <Literal>Solid lubricants are materials that, despite being in the solid phase, are able to reduce friction between two surfaces sliding against each other without the need for a liquid oil medium.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/speed</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Speed</IRI>
+        <Literal>The rate at which someone or something moves or operates or is able to move or operate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/sphere</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Sphere</IRI>
+        <Literal>A round solid figure, or its surface, with every point on its surface equidistant from its centre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Spinning</IRI>
+        <Literal>A rotation is a circular movement of an object around a center (or point) of rotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Steel</IRI>
+        <Literal>Alloy of iron and carbon and possibly other elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SteelHeatTreatment</IRI>
+        <Literal>ISO 683-[...]: heat-treated steels, alloy steels and free-cutting steels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SteelSteel</IRI>
+        <Literal>Both things, which have contact to each other are from steel.
+E.g. Body and Counterbody within tribological testing are both steel parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Stress</IRI>
+        <Literal>Mechanical stress expresses the internal forces of a body, which are caused by a external mechanical load or external forces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/StressCollective</IRI>
+        <Literal>The stress collective is the definition of all kinematic conditions and operational factors, which operate on the system structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.nature.com/subjects/structural-materials</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/StructuralMaterial</IRI>
+        <Literal>Structural materials are materials used or studied primarily for their mechanical properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/SubjectOfExperiment</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>The Oxford English Dictionary. Oxford University Press, 2 Ed., 1989</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SubjectOfExperiment</IRI>
+        <Literal>A subject of an experimental is: &quot;one who executes the experiment&quot; For instance: a &lt;human&gt;, a &lt;robot&gt;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/SubjectRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Substrate</IRI>
+        <Literal>Base material, which is processed. For instance, a coating is applied on this material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SurfaceRoughness</IRI>
+        <Literal>Roughness is the deviation of the real surface from its ideal form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 0-582-46236-3</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Synthesis</IRI>
+        <Literal>The artificial execution of useful chemical reactions to obtain one or several products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Lubricant#Mineral_oil</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SyntheticOil</IRI>
+        <Literal>Petroleum-derived lubricant produced using synthetic hydrocarbons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN 978-0-935702-75-0</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/SystematicError</IRI>
+        <Literal>Experimental uncertainties which cannot be revealed by repeating the measurements. e.g. stopping the time with a stopwatch which runs consistently slow, all times will be underestimated and the repetition will not reveal the error.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/TargetVariable</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TargetVariable</IRI>
+        <Literal>A target variable is an unknown variable of the domain model about which the experiment is designed to discover new knowledge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TargetVariable</IRI>
+        <Literal>Within the domain of tribology used for the variable which is varied to investigate the influence of this variable on tribological behavior (friction and wear behavior).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/TaskRole</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <IRI>/TechnicalDescription</IRI>
+        <Literal>EXPO (http://expo.sourceforge.net)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>http://www.u.arizona.edu/~menchaca/engl308/assignments/descriptions.htm</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TechnicalDescription</IRI>
+        <Literal>A technical description is a representation of technical information about experimental equipment or a subject (robot) in order to provide the user with information about a technology&apos;s purpose and functions, components and construction, and operation and maintenance?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/temperature</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Temperature</IRI>
+        <Literal>The degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TestSeries</IRI>
+        <Literal>Consists of different samples which are tested and an overall result is built from the coherent series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Time</IRI>
+        <Literal>The indefinite continued progress of existence and events in the past, present, and future regarded as a whole. - https://www.lexico.com/definition/time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TimeStamp</IRI>
+        <Literal>an exact point of time in the format xsd:dateTimeStamp.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/materialMetadata/symbol"/>
+        <IRI>/TitaniumCarbide</IRI>
+        <Literal>TiC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TriboElement</IRI>
+        <Literal>An element of a tribological system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-642-22647-2_303</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TriboSystem</IRI>
+        <Literal>Entity with a structure to perform a technical function consisting of at least two interacting bodies in relative motion and any environmental factor that affects their interaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TriboSystem</IRI>
+        <Literal>The description of tribosystems is based on a detailed assessment of relevant system inputs, outputs and losses, as well as an overall description of the system structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TribologicalParameter</IRI>
+        <Literal>Parameters which are especially used within the domain of tribology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TribologicalReferenceMethod</IRI>
+        <Literal>The tribological standard method for experiments containing a tribosystem, a stress collective and some interactions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://doi.org/10.1007/978-3-8348-2236-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TribologicalTesting</IRI>
+        <Literal>Tribological measurement and testing technology, known as tribometry, ranges from investigations of complete technical systems under real operating conditions to laboratory model tests with simple test specimens.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://en.wikipedia.org/wiki/Ultrasonic_cleaning</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ultrasonication</IRI>
+        <Literal>Ultrasonic cleaning is a process that uses ultrasound to agitate a fluid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/unit</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Unit</IRI>
+        <Literal>A quantity chosen as a standard in terms of which other quantities may be expressed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/en/definition/variable</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Variable</IRI>
+        <Literal>A quantity which during a calculation is assumed to vary or be capable of varying in value (mathematics).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>ISBN: 978-1-4987-5290-9</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ViscosityindexImprover</IRI>
+        <Literal>Compounds that allow lubricants to remain viscous at higher temperatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <IRI>/Volt</IRI>
+        <Literal>V</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>https://www.lexico.com/definition/voltage</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Voltage</IRI>
+        <Literal>An electromotive force or potential difference expressed in volts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/VolumeElement</IRI>
+        <Literal>Basic elements which have a volume, thus they have three dimensions (3D).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WearBehavior</IRI>
+        <Literal>Properties of an tribological system regarding the damaging, gradual removal or deformation of material at solid surfaces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="/FROM"/>
+            <Literal>GfT Arbeitsblatt 7</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/WearVolume</IRI>
+        <Literal>Volume change of the worn body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/YoungsModulus</IRI>
+        <Literal>Ratio of linear stress to linear Strain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasTargetVariable</IRI>
+        <Literal>The relation is used to seperate all parameters from the variable which is the target of the scientific study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/hasValue</IRI>
+        <Literal>To sign the value of a parameter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/textualHypothesis</IRI>
+        <Literal>The annotation property for explicit stating the textual description of a experimental hypothesis or research question, which is described, for instance in a publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/textualInterpretation</IRI>
+        <Literal>The annotation property for explicit stating the textual description of a results interpretation, which is described, for instance in a publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/usedIn</IRI>
+        <Literal>A relation to sign the physical constituants of the samples used in the test series. Physical constituants can be &quot;Substrate&quot;, &quot;Assembly&quot;, &quot;Part&quot;, &quot;Lubricant&quot;, &quot;Material&quot;, etc. The physical constituants of the sample carry information about preprocessing, thus if different preprocessing of different sample parts is used in the test series, the physical constituants can be related to the classes &quot;Sample&quot;, &quot;SampleGroup&quot; or &quot;TestSeries&quot; via the relation usedIn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/materialMetadata/materialNumber"/>
+        <IRI>/100Cr6</IRI>
+        <Literal>1.3505</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/2dCompound</IRI>
+        <Literal>A group of chrystalline material with only one layer of atoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <Literal>xfgxdfgdfg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="/FROM"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal>asfdsf</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="/materialMetadata/composition"/>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="/materialMetadata/materialNumber"/>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="/materialMetadata/norm"/>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="/materialMetadata/symbol"/>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/symbol"/>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/uomMetadata"/>
+    </SubAnnotationPropertyOf>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="/SampleBodyID"/>
+        <IRI>/Body</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="/textualHypothesis"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="/textualInterpretation"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="/SampleCounterBodyID"/>
+        <IRI>/CounterBody</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="/textualHypothesis"/>
+        <IRI>/ExperimentalHypothesis</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="/textualInterpretation"/>
+        <IRI>/ExperimentalResults</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="/materialMetadata/matMetadata"/>
+        <IRI>/Material</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="/unitOfMeasurementMetadata/uomMetadata"/>
+        <IRI>/Unit</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
