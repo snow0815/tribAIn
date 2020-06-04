@@ -33,3 +33,8 @@ The ontology-editor Protégé (Version 5.5.0) was used for building the owl repr
 
 * [Protégé](https://protege.stanford.edu/) - Musen, M.A. [The Protégé project: A look back and a look forward.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4883684/) AI Matters. Association of Computing Machinery Specific Interest Group in Artificial Intelligence, 1(4), June 2015. DOI: 10.1145/2757001.2757003.
 * [EXPO](https://sourceforge.net/projects/expo/) ontology
+
+## Usage and License
+
+The tribAIn ontology is made available as owl-file and ttl-file for general use and download from this repository.  
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
