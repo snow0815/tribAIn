@@ -6,6 +6,8 @@
 
 The tribAIn<a href="#footnote1" id="footnote1ref"><sup>1</sup></a> ontology aims to formalize knowledge gained from tribological experiments for reuse, comparison and documentation. Therefore, the tribAin ontology provides concepts for the specification of methodological background knowledge of experimental design, the documentation of the experimental setup and the representation of different kinds of results (e.g. measurements series, analysis, interpretation in natural-language). Using the EXPO<a href="#footnote2" id="footnote2ref"><sup>2</sup></a> (ontology of scientific experiments) as basis, gives tribAIn a generic background about scientific experimental design, methodology and results representation.
 
+For more information about the tribAIn ontology, read our Open Access Article: Kügler, P.; Marian, M.; Schleich, B.; Tremmel, S.; Wartzack, S. tribAIn—Towards an Explicit Specification of Shared Tribological Understanding. Appl. Sci. 2020, 10, 4421. https://www.mdpi.com/2076-3417/10/13/4421
+
 <a id="footnote1" href="#footnote1ref"><sup>1</sup><a> *Derived from the ancient Greek word “tribein” (= rubbing) and the acronym “AI” (= Artificial Intelligence)*  
   <a id="footnote2" href="#footnote2ref"><sup>2</sup><a> *Soldatova, L. N.; King, R. D. An ontology of scientific experiments. Journal of the Royal Society, 631 Interface, 2006, 11, pp. 795–803. 10.1098/rsif.2006.0134*
     
